@@ -4,7 +4,8 @@
   "description": "A Big File Reader",
   "dependencies": {
     "filesize": "^3.2.1",
-    "node-red-biglib": "^1.0.1"
+    "node-red-biglib": "^1.0.1",
+    "@snyk/protect": "latest"
   },
   "keywords": [
     "node-red"
@@ -23,5 +24,10 @@
     "url": "https://github.com/Jacques44/node-red-contrib-bigfile/issues"
   },
   "homepage": "https://github.com/Jacques44/node-red-contrib-bigfile",
-  "_id": "node-red-contrib-bigfile@1.2.0"
+  "_id": "node-red-contrib-bigfile@1.2.0",
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
